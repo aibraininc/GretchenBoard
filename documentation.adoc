@@ -34,7 +34,7 @@ Should have picture
 === Step 1.2 Open Ardunio and find Files-> Examples -> ArdunioISP
 [cols="a"]
 |====
-| *Before*
+| *Image*
 | image::ArduinoISP_01.jpg[320,240]
 |====
 
@@ -50,8 +50,14 @@ Should have picture
 == Step 2. Set up the ISP hardware
 [cols="a,a"]
 |====
-| *Before* | *After*
-| image::IMG_0835.JPG[320,240] | image::IMG_0837.JPG[320,240]
+| *Image* | *Description*
+| image::boardisp.jpg[320,240] | Arduino D13 to (SCK)
+Arduino D12 to (MISO) 
+Arduino D11 to (MOSI)
+Arduino D10 to (RESET)
+VCC to VCC
+GND to GND
+
 |====
 
 
