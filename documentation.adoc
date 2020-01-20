@@ -120,6 +120,7 @@ Install xpcc
 === Step 3.3 Test with blinky. Sensoriboard should blink
   cd <path-to-sensoriboard-package>/sensorimotor/embedded/blinky
   make; make install;
+  
 Check if sensoriboard is blinking rapidly.
 
 === Step 3.4 Flash sensoriboard
