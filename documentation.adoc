@@ -48,14 +48,16 @@ Should have picture
 
 
 == Step 2. Set up the ISP hardware
-[cols="a,a"]
+[cols="a,a,a"]
 |====
-| *Image* | *Description*
-| image::boardisp.jpg[320,240] | Arduino D13 to (SCK) \   Arduino D12 to (MISO) 
-Arduino D11 to (MOSI)
-Arduino D10 to (RESET)
-VCC to VCC
-GND to GND
+| *Arduino* | *Sensoriboard* | *Description*
+| image::boardisp.jpg[320,240] | image::ispsensori.jpg[320,240] |* Arduino D13 to Sensoriboard SCK
+* Arduino D12 to Sensoriboard MISO
+* Arduino D11 to Sensoriboard MOSI
+* Arduino D10 to Sensoriboard RESET
+* Arduino VCC (5V) to Sensoriboard VCC
+* Arduino GND to Sensoriboard GND
+* Arduino RESET to 10 uf capacitor to Ardunio GND
 
 |====
 
