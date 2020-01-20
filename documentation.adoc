@@ -51,7 +51,7 @@ Should have picture
 [cols="a,a"]
 |====
 | *Image* | *Description*
-| image::boardisp.jpg[320,240] | Arduino D13 to (SCK) \n Arduino D12 to (MISO) 
+| image::boardisp.jpg[320,240] | Arduino D13 to (SCK)   Arduino D12 to (MISO) 
 Arduino D11 to (MOSI)
 Arduino D10 to (RESET)
 VCC to VCC
