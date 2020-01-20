@@ -141,5 +141,8 @@ Check if sensoriboard is blinking rapidly.
   ./set_id.py -p /dev/ttyUSB0 -b oldID -n newID
   ./set_id.py -p /dev/ttyUSB0 -b 127 -n 0
   *Default motor ID is 127.
+  
+  cd <path-to-sensoriboard-package>/libsensorimotor/py
   python example_pos_ctrl.py
   python example_imp_ctrl.py
+  * For testing motor control, you should follow instruction on libsensorimotor repo and build shared lib and set low_latency mode.
