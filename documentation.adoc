@@ -139,7 +139,7 @@ Check if sensoriboard is blinking rapidly.
 === Step 4.3 Run program to set ID
   cd <path-to-sensoriboard-package>/sensorimotor/embedded/tools
   ./set_id.py -p /dev/ttyUSB0 -b oldID -n newID
-  ./set_id.py -p /dev/ttyUSB0 -b 127 -n 1
+  ./set_id.py -p /dev/ttyUSB0 -b 127 -n 0
   *Default motor ID is 127.
   python example_pos_ctrl.py
   python example_imp_ctrl.py
