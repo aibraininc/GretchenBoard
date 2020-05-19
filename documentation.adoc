@@ -11,8 +11,6 @@ Following these steps will enable you to flash the boards for Gretchen._
 === Recommended Tools
 You will need these tools to flash the Gretchen Board.
 
-Should have picture
-
 * Cables
 * Sensoriboards to flash
 * USBASP board
