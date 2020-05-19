@@ -5,7 +5,7 @@ v0.1, 2019-03-28
 :toc:
 
 _This is the Gretchen board flashing manual.
-Following these steps will enable you to create an ISP and flash the boards for Gretchen._
+Following these steps will enable you to flash the boards for Gretchen with USBASP board._
 
 [cols="a,a"]
 |====
@@ -19,7 +19,7 @@ You will need these tools to flash the Gretchen Board.
 
 Should have picture
 
-* USB ISP board
+* USBASP board
 * Cables
 * Sensoriboards to flash
 
@@ -40,35 +40,40 @@ and put in
 The udev rules get activated when your reconnect your USB-to-serial device.
 
 
-== Step 1. Check USB ISP board
+== Step 1. Check USBASP board
 [cols="a,a"]
 |====
 | *Image* |
 | image::usbisp-1.jpg[320,240] | image::usbisp-2.jpg[320,240]
 |====
 
-USB ISP board is in the package.
+USBASP board is in the package.
 
 We use 5v. There are 5v and 3.3v in the board. Please connect 5v pin and the next pin.
 
+[cols="a,a"]
+|====
+| *Before Image* | *After Image*
+| image::usb-asp-before.jpg[320,240] | image::usb-asp-after.jpg[320,240]
+|====
 
 
-== Step 2. Set up the ISP hardware
+== Step 2. Set up the USBASP board
 
-=== Step 2.1 Use cables to connect ISP board with sensoriboard
+=== Step 2.1 Use cables to connect USBASP board with sensoriboard
 [cols="a,a,a"]
 |====
-| *Arduino* | *Sensoriboard* | *Description*
+| *USBASP board* | *Sensoriboard* | *Description*
 | image::usbisp-3.png[320,240] | image::ispsensori.jpg[320,240] |
-* Arduino SCK to Sensoriboard SCK
-* ISP MISO to Sensoriboard MISO
-* ISP MOSI to Sensoriboard MOSI
-* ISP RST to Sensoriboard RESET
-* ISP VCC to Sensoriboard 5V
-* ISP GND to Sensoriboard GND
+* USBASP SCK to Sensoriboard SCK
+* USBASP MISO to Sensoriboard MISO
+* USBASP MOSI to Sensoriboard MOSI
+* USBASP RST to Sensoriboard RESET
+* USBASP VCC to Sensoriboard 5V
+* USBASP GND to Sensoriboard GND
 |====
 
-It is photo that ISP connected with sensoriboard
+It is photo that USBASP board connected with sensoriboard
 
 [cols="a"]
 |====
@@ -77,9 +82,9 @@ It is photo that ISP connected with sensoriboard
 |====
 
 
-=== Step 2.2 Connect USB ISP to computer
+=== Step 2.2 Connect USBASP board to computer
 
-== Step 3. Flash sensoriboard with ISP
+== Step 3. Flash sensoriboard with USBASP board
 === Step 3.1 Download the library
   git clone https://github.com/aibraininc/sensoriboard-package.git
 
@@ -124,7 +129,7 @@ Check if sensoriboard is blinking rapidly.
 Once flashing is finished, you can see the red light on the sensoriboard.
 
 == Step 4. Set motor ID
-=== Step 4.1 Disconnect usb cable connecting ISP with computer
+=== Step 4.1 Disconnect usb cable connecting USBASP board with computer
 === Step 4.2 Connect RS485 cable with computer and the sensoriboard
 [cols="a"]
 |====
