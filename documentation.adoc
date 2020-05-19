@@ -7,12 +7,6 @@ v0.1, 2019-03-28
 _This is the Gretchen board flashing manual.
 Following these steps will enable you to flash the boards for Gretchen with USBASP board._
 
-[cols="a,a"]
-|====
-| image::before_assembly.png[Gretchen head] | image::after_assembly.png[Gretchen head]
-|====
-
-
 
 === Recommended Tools
 You will need these tools to flash the Gretchen Board.
@@ -73,7 +67,7 @@ We use 5v. There are 5v and 3.3v in the board. Please connect 5v pin and the nex
 * USBASP GND to Sensoriboard GND
 |====
 
-It is photo that USBASP board connected with sensoriboard
+It is photo that USBASP board connected with sensoriboard.
 
 [cols="a"]
 |====
