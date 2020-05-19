@@ -5,7 +5,7 @@ v0.1, 2019-03-28
 :toc:
 
 _This is the Gretchen board flashing manual.
-Following these steps will enable you to flash the boards for Gretchen with USBASP board._
+Following these steps will enable you to flash the boards for Gretchen._
 
 
 === Recommended Tools
