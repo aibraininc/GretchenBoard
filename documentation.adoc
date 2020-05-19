@@ -1,10 +1,10 @@
-= Gretchen Board Flashing Documentation
+= Gretchen Sensoriboard Flashing Documentation
 Doc Writer <kubisch@informatik.hu-berlin.de>
 v0.1, 2019-03-28
 :imagesdir: ./images
 :toc:
 
-_This is the Gretchen board flashing manual.
+_This is the Gretchen Sensoriboard flashing manual.
 Following these steps will enable you to flash the boards for Gretchen._
 
 
@@ -36,16 +36,18 @@ and put in
 The udev rules get activated when your reconnect your USB-to-serial device.
 
 
-== Step 1. Check USBASP board
+== Step 1. Setup the USBASP board
+=== Step 1.1 Find the board. USBASP board is in the package.
+
 [cols="a,a"]
 |====
 | *USBASP board front* | *USBASP board back*
 | image::usbisp-1.jpg[320,240] | image::usbisp-2.jpg[320,240]
 |====
 
-USBASP board is in the package.
+=== Step 1.2 Change the power.
 
-We use 5v. There are 5v and 3.3v in the board. Please connect 5v pin and the next pin.
+We use 5v. You can choose to use 5v or 3.3v and there is a switch for it. Please connect pins like below.
 
 [cols="a,a"]
 |====
@@ -54,13 +56,13 @@ We use 5v. There are 5v and 3.3v in the board. Please connect 5v pin and the nex
 |====
 
 
-== Step 2. Set up the USBASP board
+== Step 2. Connect the USBASP board with the sensoriboard
 
-=== Step 2.1 Use cables to connect USBASP board with sensoriboard
-[cols="a,a,a"]
+=== Step 2.1 Use cables to connect USBASP board with the sensoriboard
+[cols="a,a,a,a"]
 |====
-| *USBASP board* | *Sensoriboard* | *Description*
-| image::usbisp-3.png[320,240] | image::ispsensori.jpg[320,240] |
+| *USBASP board* | *Sensoriboard* | *Connection *| *Description*
+| image::usbisp-3.png[320,240] | image::ispsensori.jpg[320,240] | image::usbisp-4.jpg[320,240] |
 * USBASP SCK to Sensoriboard SCK
 * USBASP MISO to Sensoriboard MISO
 * USBASP MOSI to Sensoriboard MOSI
