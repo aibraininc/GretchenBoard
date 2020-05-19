@@ -19,10 +19,7 @@ You will need these tools to flash the Gretchen Board.
 
 Should have picture
 
-* Breadboard
-* Arduino Nano
-* Arduino USB cable
-* Capacitor 220uF 16V
+* USB ISP board
 * Cables
 * Sensoriboards to flash
 
@@ -50,7 +47,9 @@ The udev rules get activated when your reconnect your USB-to-serial device.
 | image::usbisp-1.jpg[320,240] | image::usbisp-2.jpg[320,240]
 |====
 
-You can select the voltage of VCC. There are 5v and 3.3v. We use 5v.
+USB ISP board is in the package.
+
+We use 5v. There are 5v and 3.3v in the board. Please connect 5v pin and the next pin.
 
 
 
@@ -122,6 +121,8 @@ Check if sensoriboard is blinking rapidly.
   cd <path-to-sensoriboard-package>/sensorimotor/embedded/firmware
   scons program
 
+Once flashing is finished, you can see the red light on the sensoriboard.
+
 == Step 4. Set motor ID
 === Step 4.1 Disconnect usb cable connecting ISP with computer
 === Step 4.2 Connect RS485 cable with computer and the sensoriboard
@@ -139,7 +140,9 @@ Check if sensoriboard is blinking rapidly.
 
 === Step 4.4 Test motor
 
-  cd <path-to-sensoriboard-package>/libsensorimotor/py
+  cd <path-to-sensoriboard-package>/libsensorimotor
+	scons
+	cd py
   python example_pos_ctrl.py
   python example_imp_ctrl.py
   * For testing motor control, you should follow instruction on libsensorimotor repo.
