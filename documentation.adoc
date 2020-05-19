@@ -61,7 +61,7 @@ We use 5v. You can choose to use 5v or 3.3v and there is a switch for it. Please
 === Step 2.1 Use cables to connect USBASP board with the sensoriboard
 [cols="a,a,a,a"]
 |====
-| *USBASP board* | *Sensoriboard* | *Connection *| *Description*
+| *USBASP board* | *Sensoriboard* | *Connection* | *Description*
 | image::usbisp-3.png[320,240] | image::ispsensori.jpg[320,240] | image::usbisp-4.jpg[320,240] |
 * USBASP SCK to Sensoriboard SCK
 * USBASP MISO to Sensoriboard MISO
@@ -71,16 +71,7 @@ We use 5v. You can choose to use 5v or 3.3v and there is a switch for it. Please
 * USBASP GND to Sensoriboard GND
 |====
 
-It is photo that USBASP board connected with sensoriboard.
-
-[cols="a"]
-|====
-| *Image*
-| image::usbisp-4.jpg[320,240]
-|====
-
-
-=== Step 2.2 Connect USBASP board to computer
+=== Step 2.2 Connect USBASP board to a computer
 
 == Step 3. Flash sensoriboard with USBASP board
 === Step 3.1 Download the library
