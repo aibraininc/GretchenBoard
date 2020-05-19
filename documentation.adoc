@@ -13,10 +13,10 @@ You will need these tools to flash the Gretchen Board.
 
 Should have picture
 
-* USB to serial/RS485 board
-* USBASP board
 * Cables
 * Sensoriboards to flash
+* USBASP board
+* USB to serial/RS485 board
 
 image:recommended-tools.jpg[640,480]
 
