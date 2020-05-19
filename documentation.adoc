@@ -37,7 +37,7 @@ The udev rules get activated when your reconnect your USB-to-serial device.
 == Step 1. Check USBASP board
 [cols="a,a"]
 |====
-| *Image* |
+| *USBASP board front* | *USBASP board back*
 | image::usbisp-1.jpg[320,240] | image::usbisp-2.jpg[320,240]
 |====
 
