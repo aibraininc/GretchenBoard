@@ -13,9 +13,13 @@ You will need these tools to flash the Gretchen Board.
 
 Should have picture
 
+* USB to serial/RS485 board
 * USBASP board
 * Cables
 * Sensoriboards to flash
+
+image:recommended-tools.jpg[640,480]
+
 
 == Step 0. Setting up Serial Devices
 For setting up your USB-to-Serial/RS485 device to best work with sensorimotors you have to *enable low latency mode* on your machine. Low latency mode is needed to have the best performance on higher baudrates and with multiple motors attached to the bus. Otherwise some machines tend to buffer data packages and send them delayed which is *NOT* recommended when using sensorimotors, because the library needs a tight real-time loop here. In order to temporarily set your interface to low-latency mode type:
@@ -48,7 +52,7 @@ We use 5v. There are 5v and 3.3v in the board. Please connect 5v pin and the nex
 [cols="a,a"]
 |====
 | *Before Image* | *After Image*
-| image::usb-asp-before.jpg[320,240] | image::usb-asp-after.jpg[320,240]
+| image::before-isp.png[320,240] | image::after-isp.png[320,240]
 |====
 
 
