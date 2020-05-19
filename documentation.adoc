@@ -82,7 +82,7 @@ It is photo that USBASP board connected with sensoriboard.
 === Step 3.1 Download the library
   git clone https://github.com/aibraininc/sensoriboard-package.git
 
-  git checkout v0.1
+  git checkout usbasp
 
 === Step 3.2 Install XPCC
 
