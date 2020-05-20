@@ -41,14 +41,15 @@ The udev rules get activated when your reconnect your USB-to-serial device.
 
 
 == Step 1. Create Arduino ISP
+
+We can use an Arduino as AVR programmer. In this step, I introduce how to set up the nano as AVR programmer.
+
+=== Step 1.1 Connect Ardunio to computer with Ardunio USB cable
 [cols="a"]
 |====
 | *Image*
 | image::IMG_6005.jpg[320,240]
 |====
-
-=== Step 1.1 Connect Ardunio to computer with Ardunio USB cable
-
 === Step 1.2 Open Ardunio and find Files-> Examples -> ArdunioISP
 [cols="a"]
 |====
