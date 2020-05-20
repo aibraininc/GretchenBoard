@@ -7,17 +7,10 @@ v0.1, 2019-03-28
 _This is the Gretchen board flashing manual.
 Following these steps will enable you to create an ISP and flash the boards for Gretchen._
 
-[cols="a,a"]
-|====
-| image::before_assembly.png[Gretchen head] | image::after_assembly.png[Gretchen head]
-|====
-
 
 
 === Recommended Tools
-You will need these tools to flash the Gretchen Board.
-
-Should have picture
+You will need these tools to flash the Gretchen Board. (listed left to right)
 
 * Breadboard
 * Arduino Nano
@@ -25,6 +18,10 @@ Should have picture
 * Capacitor 220uF 16V
 * Cables
 * Sensoriboards to flash
+* USB to serial/RS485 board
+
+image:recommended-tools.jpg[640,480]
+
 
 == Step 0. Setting up Serial Devices
 For setting up your USB-to-Serial/RS485 device to best work with sensorimotors you have to *enable low latency mode* on your machine. Low latency mode is needed to have the best performance on higher baudrates and with multiple motors attached to the bus. Otherwise some machines tend to buffer data packages and send them delayed which is *NOT* recommended when using sensorimotors, because the library needs a tight real-time loop here. In order to temporarily set your interface to low-latency mode type:
@@ -56,17 +53,36 @@ The udev rules get activated when your reconnect your USB-to-serial device.
 [cols="a"]
 |====
 | *Image*
-| image::ArduinoISP_01.jpg[320,240]
+| image::arduino-1.png[320,240]
 |====
 
 === Step 1.3 Open Tools-> Board ""-> ArdunioNano
+[cols="a"]
+|====
+| *Image*
+| image::arduino-2.png[320,240]
+|====
 
 === Step 1.4 Select Tools-> Processor ATMega328P (Old Bootloader)
+[cols="a"]
+|====
+| *Image*
+| image::arduino-3.png[320,240]
+|====
+
 
 === Step 1.5 Select the usb port that the Ardunio is connected in Tools-> Port ""
-
+[cols="a"]
+|====
+| *Image*
+| image::arduino-4.png[320,240]
+|====
 === Step 1.6 Press compile and upload
-
+[cols="a"]
+|====
+| *Image*
+| image::arduino-5.png[320,240]
+|====
 
 == Step 2. Set up the ISP hardware
 
@@ -120,7 +136,7 @@ Install xpcc
 === Step 3.3 Test with blinky. Sensoriboard should blink
   cd <path-to-sensoriboard-package>/sensorimotor/embedded/blinky
   make; make install;
-  
+
 Check if sensoriboard is blinking rapidly.
 
 === Step 3.4 Flash sensoriboard
@@ -143,7 +159,7 @@ Check if sensoriboard is blinking rapidly.
   *Default motor ID is 127.
 
 === Step 4.4 Test motor
-  
+
   cd <path-to-sensoriboard-package>/libsensorimotor/py
   python example_pos_ctrl.py
   python example_imp_ctrl.py
