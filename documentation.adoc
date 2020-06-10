@@ -22,6 +22,9 @@ image:recommended-tools.jpg[640,480]
 == Step 0. Setting up Serial Devices
 For setting up your USB-to-Serial/RS485 device to best work with sensorimotors you have to *enable low latency mode* on your machine. Low latency mode is needed to have the best performance on higher baudrates and with multiple motors attached to the bus. Otherwise some machines tend to buffer data packages and send them delayed which is *NOT* recommended when using sensorimotors, because the library needs a tight real-time loop here. In order to temporarily set your interface to low-latency mode type:
 
+link:https://youtu.be/Xy_muEehxSQ[click here to watch the video tutorial]
+
+
 === Step 0.1 Install setserial
 	sudo apt install setserial
 
@@ -74,6 +77,10 @@ We use 5v. You can choose to use 5v or 3.3v and there is a switch for it. Please
 === Step 2.2 Connect USBASP board to a computer
 
 == Step 3. Flash sensoriboard with USBASP board
+
+link:https://youtu.be/2H1ldNzlC7k[click here to watch the video tutorial for step 3.1 ~ step 3.2]
+
+
 === Step 3.1 Download the library
   git clone https://github.com/aibraininc/sensoriboard-package.git
 
@@ -106,12 +113,16 @@ Install xpcc
   git clone https://github.com/roboterclubaachen/xpcc.git
 
 === Step 3.3 Test with blinky. Sensoriboard should blink
+link:https://youtu.be/6sQluMFkU9c[click here to watch the video tutorial]
+
   cd <path-to-sensoriboard-package>/sensorimotor/embedded/blinky
   make; make install;
 
 Check if sensoriboard is blinking rapidly.
 
 === Step 3.4 Flash sensoriboard
+link:https://youtu.be/frWV4skBhkQ[click here to watch the video tutorial]
+
   cd <path-to-sensoriboard-package>/sensorimotor/embedded/firmware
   scons program
 
@@ -127,12 +138,15 @@ Once flashing is finished, you can see the red light on the sensoriboard.
 |====
 
 === Step 4.3 Run program to set ID
+link:https://youtu.be/nZ2sE6QUba4[click here to watch the video tutorial]
+
   cd <path-to-sensoriboard-package>/sensorimotor/embedded/tools
   ./set_id.py -p /dev/ttyUSB0 -b oldID -n newID
   ./set_id.py -p /dev/ttyUSB0 -b 127 -n 0
   *Default motor ID is 127.
 
 === Step 4.4 Test motor
+link:https://youtu.be/wrIroLg2dOw[click here to watch the video tutorial]
 
   cd <path-to-sensoriboard-package>/libsensorimotor
 	scons
